@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+}
+.main{
+ top:0;
+ height: 600px;
+ background-image: url("https://images.squarespace-cdn.com/content/v1/5824ff3e20099e33a0088f48/1561591711965-OI3S5S8XU38V281KL90K/ke17ZwdGBToddI8pDm48kDk1dm1oSR9gCa1mX4KqzjN7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0luj0xCD0oh5KMc0gpox0u-wQWxfQHg04OxgQwaUq2yiAcNt5Kg2tE9yEtYfM4xwaw/Display+Case.jpg");
+ width:100%
+
+}
+header{
+ width: 100%;
+ height: 90px;
+ font-size: 20px;
+ 
+}
+#logo{
+ margin-top:10px;
+ margin:0 0 0 20px;
+}
+.submain{
+ margin-top: 20px;
+ width: 100%;
+ height: 450px;
+ 
+}
+#letter{
+ margin-left: 400px;
+ color: cornsilk;
+ font-size: 70px;
+}
+#letter1{
+ margin-left:450px;
+ color: cornsilk;
+ font-size: 25px;
+}
+.submain2{
+ background-color:rgb(212, 176, 14);
+ width: 100%;
+ margin-top: 0;
+ height: 90px;
+
+}
+.submain1{
+ width: 100%;
+ height: 50px;
+ background-color:rgb(212, 176, 14);
+}
+#letter2{
+ margin-left:410px;
+ color: cornsilk;
+ font-size: 35px;
+}
+#letter3{
+ margin-left:430px;
+ color: cornsilk;
+ font-size: 20px;
+}
+
+.submain3{
+ font-size: 30px;
+ width: 100%;
+ margin-top: 40px;
+ height:300px;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ align-items: center;     
+}
+
+.submain4{
+ background-image: url("http://www.malanad.com/wp-content/uploads/2018/10/j3.png");
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-position: center;
+ width: 100%;
+ margin-top: 0;
+ height: 900px;
+}
+form{
+    font-size: 20px;
+}
+button{
+    background-color: rgb(177, 49, 10);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 30px;
+    border-color: rgb(177, 49, 10);
+}
