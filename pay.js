@@ -1,12 +1,15 @@
+var arr=new Array();
 function names(divName){
                 var bill,people,share;
                 bill=document.getElementById("total").value;
                 people=document.getElementById("reserved").value;
                 share= bill/people;
-                for(let i=2;i<= people;i++)
+                for(let i=1;i<= people;i++)
                 {
                     var newdiv = document.createElement('div');
-                    newdiv.innerHTML = "Entry " + (i) + " <br><input type='text' >";
+                    newdiv.innerHTML = "Entry " + (i) + " <br><input id =name"+i+" type='text' >";
+                    arr.push("name"+i);
+                    console.log(arr);
                     document.getElementById(divName).appendChild(newdiv);
                     
                 }
@@ -28,17 +31,18 @@ function viewshare(){
                 var tableBody = document.createElement('TBODY');
                 table.appendChild(tableBody);
                     
-                for (var i=0; i<1; i++){
+                for (var i=0; i<arr.length; i++){
                     var tr = document.createElement('TR');
                     tableBody.appendChild(tr);
+                    tr.width='100';
                     
-                    for (var j=0; j<people; j++){
-                        var td = document.createElement('TD');
-                        td.width='100';
-                        td.appendChild(document.createTextNode(share));
-                        tr.appendChild(td);
-                    
-                        }
+                    var td = document.createElement('TD');
+                    td.width='200';
+                    td.appendChild(document.createTextNode(document.getElementById(arr[i]).value));
+                    td.appendChild(document.createTextNode(""));
+                    td.appendChild( document.createTextNode(""));
+                    td.appendChild(document.createTextNode(share));
+                    tr.appendChild(td);
                          myTableDiv.appendChild(table);
       
                      }   
