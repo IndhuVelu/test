@@ -30,7 +30,6 @@ function viewshare(){
                 
                 var tableBody = document.createElement('TBODY');
                 table.appendChild(tableBody);
-                    
                 for (var i=0; i<arr.length; i++){
                     var tr = document.createElement('TR');
                     tableBody.appendChild(tr);
@@ -39,10 +38,12 @@ function viewshare(){
                     var td = document.createElement('TD');
                     td.width='200';
                     td.appendChild(document.createTextNode(document.getElementById(arr[i]).value));
-                    td.appendChild(document.createTextNode(""));
-                    td.appendChild( document.createTextNode(""));
-                    td.appendChild(document.createTextNode(share));
                     tr.appendChild(td);
+
+                    var td1= document.createElement('TD');
+                    td1.width='100';
+                    td1.appendChild(document.createTextNode(share));
+                    tr.appendChild(td1);
                          myTableDiv.appendChild(table);
       
                      }   
