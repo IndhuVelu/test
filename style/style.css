@@ -1,0 +1,131 @@
+.header {
+    background: url('bus.jpeg') no-repeat;
+    width: 95%;
+    height: 490px;
+    margin: auto;
+    border-radius: 46px;
+    /* box-shadow: 2px 2px 2px 2px pink; */
+}
+.bus-bg {
+    background: url('https://previews.123rf.com/images/stevanovicigor/stevanovicigor1704/stevanovicigor170400094/75526342-woman-using-mobile-phone-app-to-purchase-electronic-ticket-for-bus-public-transportation-close-up-of.jpg') no-repeat;
+    height: 900px;
+    background-size: contain;
+    margin-top: 0%;
+}
+.bus {
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRn6Tia9EMA2T1P_2k4xe7I-PrHP3cS7iu2PgJG-WKP2a0WWoBI') no-repeat;
+    height: 970px;
+    width: 100%;
+    background-size: contain;
+    margin-top: 0%;
+}
+.travells-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: right;
+    line-height: 40px;
+    width: 39%;
+    float: right;
+    background: rgba(0, 0, 0, 0.05);
+    margin-top: 8%;
+}
+.table-cell {
+    display: inline-block;
+    width: 35px;
+    background-color: gainsboro;
+    border: 1px solid black;
+    margin: 1px;
+    text-align: center;
+}
+.table-cell-reserved{
+    display: inline-block;
+    width: 35px;
+    background-color: rgb(83, 69, 69);
+    border: 1px solid black;
+    margin: 1px;
+    text-align: center;
+}
+.table-cell-selected{
+    display: inline-block;
+    width: 35px;
+    background-color: rgb(15, 255, 75);
+    border: 1px solid black;
+    margin: 1px;
+    text-align: center;
+}
+.tableD {
+    background-color: wheat;
+    border: 2px solid black;
+    /*! margin: 1px 0; */
+    text-align: center;
+}
+h2{
+    color: #373737;
+    text-align: center;
+    -webkit-text-stroke: 1px bisque;
+    font-size: 218%;
+    margin: 0;
+}
+body {
+    margin: 0;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: rgba(255,255,255,0.05);
+   }
+button {
+    margin: 14px;
+    color:white;
+    background: transparent;
+    border: 2px solid#f2ca69;
+    border-radius: 15px;
+    height: 33px;
+    width: 170px;
+}
+button {
+    cursor: pointer;
+    width: 25%;
+}
+.gradient{
+    margin:0;
+    /* background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);  */
+}
+
+#seats {
+    width: 226px;
+}
+label {
+    color: white;
+    margin-right: 24px;
+}
+input, select {
+    background: transparent;
+    border: 1.5px solid lightblue;
+    color: #fff;
+    border-radius: 5px;
+    width: 226px;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    float: right;
+    align-items: center;
+}
+#preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+.output {
+    border: 2px solid black;
+}

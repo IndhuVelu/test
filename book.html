@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/style.css" type='text/css'>
+    <title>Book</title>
+    
+</head>
+<body class=gradient>
+    
+    <div class=bus>
+        <h2>Start Booking</h2>
+        <div class='travells-input'>
+            <form>
+                <div>
+                    <label for="passenger-name">Enter the passenger name</label>
+                    <input type="text" id="passenger-name">
+                </div>
+                <div>
+                    <label for="pickup">Select Starting Location</label>
+                    <select id="pickup" class=pickup>
+                        <option selected hidden>Choose here</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="pickup-location"> Select Pickup Location</label>
+                    <select id=pickup-location>
+                        <option selected hidden>Choose here</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="drop">Selct Destination Location</label>
+                    <select id="drop">
+                        <option selected hidden>Choose here</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="drop-location">Select Drop Location</label>
+                    <select id=drop-location>
+                        <option selected hidden>Choose here</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="busNumber">Select Bus Number</label>
+                    <select id=busNumber >
+                        <option selected hidden>Choose here</option>
+                    </select>
+                </div>
+               
+            </form>
+            <div class=right>
+                <div id=test>
+                    <table id = 'table'></table>
+                    </div>
+                    <button onclick='showPreview()'>Show Preview</button> 
+            </div>
+        </div>
+
+    
+    </div>
+
+
+    <div id='preview'>
+
+    </div>
+    
+</body>
+
+<script src="script/book.js"></script>
+</html>
