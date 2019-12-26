@@ -87,7 +87,7 @@ function showTable(){
            selectedSeats = [];
             for (let i=0; i<=element[3]; i+=10){
                 let tr = document.createElement('tr');
-                for (let j=1; j<=10; j++){
+                for (let j=0; j<10; j++){
                     let td = document.createElement('td');
                     if (reservedSeats[document.getElementById('busNumber').value] && reservedSeats[document.getElementById('busNumber').value].includes(String(i+j))){
                         // console.log(i+j, reservedSeats[document.getElementById('busNumber').value]);
