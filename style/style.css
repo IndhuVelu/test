@@ -1,11 +1,4 @@
-.header {
-    background: url('bus.jpeg') no-repeat;
-    width: 95%;
-    height: 490px;
-    margin: auto;
-    border-radius: 46px;
-    /* box-shadow: 2px 2px 2px 2px pink; */
-}
+
 .bus-bg {
     background: url('https://previews.123rf.com/images/stevanovicigor/stevanovicigor1704/stevanovicigor170400094/75526342-woman-using-mobile-phone-app-to-purchase-electronic-ticket-for-bus-public-transportation-close-up-of.jpg') no-repeat;
     height: 900px;
@@ -19,7 +12,11 @@
     background-size: contain;
     margin-top: 0%;
 }
+#submit-traveller-form{
+    border: #373737;
+}
 .travells-input {
+    font-family: fantasy;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -27,8 +24,8 @@
     text-align: right;
     line-height: 40px;
     width: 39%;
-    float: right;
-    background: rgba(0, 0, 0, 0.05);
+    margin-top: 8%;
+    margin: auto;
     margin-top: 8%;
 }
 .table-cell {
@@ -95,20 +92,21 @@ button {
 }
 .gradient{
     margin:0;
-    /* background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);  */
-}
 
+}
 #seats {
     width: 226px;
 }
 label {
-    color: white;
+    color: black;
     margin-right: 24px;
 }
 input, select {
+    color:#000;
+    border-radius: 5px;
+    width: 220px;
     background: transparent;
     border: 1.5px solid lightblue;
-    color: #fff;
     border-radius: 5px;
     width: 226px;
 }
