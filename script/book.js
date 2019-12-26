@@ -114,7 +114,7 @@ function showTable(){
         
     });
 
-    // console.log(seats);
+    
 
 }
 
@@ -128,7 +128,7 @@ function swap(a){
         document.getElementById(a).setAttribute('class','table-cell-selected');
         selectedSeats.push(a);
         selectedSeats = Array.from(new Set(selectedSeats));
-        // console.log(busNumber.value,selectedSeats);
+        
     }
     
 }

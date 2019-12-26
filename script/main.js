@@ -1,8 +1,7 @@
 let place={'coimbatore':Array('Gandhipuram','Singanallur','Saibaba colony','Metupalayam'),
             'chennai': Array('Thambaram','Anna nagar', 'Poyas garden', 'guindy'),
             'salem': Array('Metur','Yerkadu','Fairlands','junction'),
-            'madurai': Array('Metur','Yerkadu','Fairlands','junction'),
-            'tuticorin': Array('Metur','Yerkadu','Fairlands','junction')
+            'madurai': Array('Anaiyur', 'Andalpuram',  '80 Feet Road','Alagar Kovil Road')
         }
 
 if (!localStorage.getItem('startEnd')){
