@@ -24,9 +24,8 @@ function getDetails(){
         return
     }
     tempArr.push(Array(travellsName,from,to,seats));
-    localStorage.setItem('busDetails',JSON.stringify(tempArr))
-    // var startingTemp=JSON.parse(localStorage.getItem('starting'));
-    // var endTemp=JSON.parse(localStorage.getItem('end'));
+    localStorage.setItem('busDetails',JSON.stringify(tempArr));
+    
     var startEnd={}
     tempArr.forEach(element => {
         startEnd[element[1]]= Array();
@@ -37,6 +36,5 @@ function getDetails(){
     console.log(startEnd);
     
     localStorage.setItem('startEnd',JSON.stringify(startEnd));
-//     localStorage.setItem('starting',JSON.stringify(Array.from(new Set(startingTemp))));
-//     localStorage.setItem('end',JSON.stringify(Array.from(new Set(endTemp))));
+
 }
