@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>forget</title>
+    <link rel="stylesheet" type="text/css" href="style/login.css">
+    <script>
+    function forgetlogin(){
+        var newpassword =  document.getElementById('newpassword').value;
+        var repassword =  document.getElementById('repassword').value;
+        if(newpassword===repassword){
+            window.location.href="bus.html";
+        }
+        else
+            alert("please enter correct password");
+    }
+    </script>
+</head>
+<body>
+    <h1>Forget Password </h1>
+    <div class="main">
+    <form >
+        <div class="login_form">
+        <center>
+            <br>
+            <h1>Login form</h1><br>
+        <!-- <label id ="lb1">Enter User Id : </label>&nbsp;
+        <input  id= userid type="number" placeholder="User Id"> <br> <br> -->
+        <label id="lb2">Enter New Password : </label> &nbsp;
+        <input  id=newpassword type="text" placeholder="Password"> <br> <br>
+        <label>Reenter  The Password : </label> &nbsp;
+        <input  id=repassword type="password" placeholder="Password"> <br> <br>
+        
+        <br><br>
+        <button  id="btn" type="button" onclick="forgetlogin()">Login</button>
+    </center>
+    </div>
+    </form>
+    </div>
+</body>
+</html>
