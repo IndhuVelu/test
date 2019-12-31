@@ -26,9 +26,10 @@
                 <div class="frombox" id="attach">
                     <span id="from">From</span> <br> <br>
                     <div id="dropdown" >
-                        <select id="listul" class=listul>
-                            <option selected hidden>Choose here</option>
-                        </select>
+                        <input id="from1" list="listul" >
+                        <datalist id="listul" class=listul>
+                            <!-- <option selected hidden>Choose here</option> -->
+                        </datalist>
                     </div>
                 </div>  
                 <div class="bi_img">
@@ -37,14 +38,15 @@
                 <div class="tobox">
                     <span id="from">To</span> <br> <br>
                     <div id="dropdown1" >
-                        <select id="listul1" class=listul1>
-                            <option selected hidden >Choose here</option>
-                        </select>
+                        <input id="to1" list="listul1" >
+                        <datalist id="listul1" class=listul1>
+                            <!-- <option selected hidden >Choose here</option> -->
+                        </datalist>
                     </div>
                 </div>  
                 <div class="datebox">
                     <span id="from"> Date</span> <br> <br>
-                    <input id="date"  type="date" name="date" >
+                    <input id="date"  type="date" min="2019-12-31" name="date" >
                 </div> 
              </div> 
              <div id="date_alert">

@@ -73,12 +73,12 @@ to.forEach(element =>{
 
 function book(){
     
-    var start =  document.getElementById('listul').value;
-    var to =  document.getElementById('listul1').value;
+    var start =  document.getElementById('from1').value;
+    var to =  document.getElementById('to1').value;
     var date =  document.getElementById('date').value;
 
-     var booked=[];
-    var booked=JSON.parse(localStorage.getItem('bookedDetails'));
+    //  var booked=[];
+     var booked=JSON.parse(localStorage.getItem('bookedDetails'));
     if (start =='' || to =='' || date == '' ){
         alert('Please enter values');
         return
@@ -106,7 +106,7 @@ function book(){
         document.getElementById("date_alert").appendChild(div2);
     }
     else{
-        booked.push(Array(start,to,date));
+        booked.push(Array(start,to,date,localStorage.getItem('x')));
         localStorage.setItem('bookedDetails',JSON.stringify(booked));
         var bookedDetails = JSON.parse(localStorage.getItem('bookedDetails'));
         alert("Booked");
@@ -120,43 +120,52 @@ function show(){
 
    
     var bookedDetails = JSON.parse(localStorage.getItem('bookedDetails'));
+    var arr=[];
+    bookedDetails.forEach(element => {
+        if(element[3]===localStorage.getItem('x')){
+            arr.push(element);
+            
+        }
+    });
+    console.log(arr);
 
     var preview =[];
-    preview = bookedDetails.slice(0,3);
-    
+    preview = arr.slice(0,3);
+    console.log(preview);
     preview.forEach(element => {
-        var div1= document.createElement("div");
-    div1.style.display="flex";
-    div1.style.flexDirection="column";
-    div1.style.padding="20px";
-    var div2=document.createElement("div");
-    var div2t=document.createTextNode('UserId and Name'+' '+': '+ localStorage.getItem('x') +' / '+localStorage.getItem('w') );
-    div2.appendChild(div2t);
-    div1.appendChild(div2);
-    div2.style.padding="10px";
+        if(element[3]===localStorage.getItem('x')){
+            var div1= document.createElement("div");
+            div1.style.display="flex";
+            div1.style.flexDirection="column";
+            div1.style.padding="20px";
+            var div2=document.createElement("div");
+            var div2t=document.createTextNode('UserId and Name'+' '+': '+ localStorage.getItem('x') +' / '+localStorage.getItem('w') );
+            div2.appendChild(div2t);
+            div1.appendChild(div2);
+            div2.style.padding="10px";
 
-    var div3= document.createElement("div");
-    var div3t=document.createTextNode('Deprature and Destnation'+' '+': '+ element[0] +' / '+element[1] );
-    div3.appendChild(div3t);
-    div1.appendChild(div3);
-    div3.style.padding="10px";
-    var div4= document.createElement("div");
-    var div4t=document.createTextNode('Date'+' '+': '+element[2]);
-    div4.appendChild(div4t);
-    div1.appendChild(div4);
-    div4.style.padding="10px";
-    var button= document.createElement("button");
-    var button1=document.createTextNode('Cancel');
-    button.appendChild(button1);
-    div1.appendChild(button);
-    button.id="cancel";
-     button.addEventListener("click", func1);
-    button.style.width="80px";
-    button.style.backgroundColor= "red";
-    button.style.borderRadius="12px";
-    button.style.height="40px";
-    document.getElementById("myDynamicTable").appendChild(div1);
-
+            var div3= document.createElement("div");
+            var div3t=document.createTextNode('Deprature and Destnation'+' '+': '+ element[0] +' / '+element[1] );
+            div3.appendChild(div3t);
+            div1.appendChild(div3);
+            div3.style.padding="10px";
+            var div4= document.createElement("div");
+            var div4t=document.createTextNode('Date'+' '+': '+element[2]);
+            div4.appendChild(div4t);
+            div1.appendChild(div4);
+            div4.style.padding="10px";
+            var button= document.createElement("button");
+            var button1=document.createTextNode('Cancel');
+            button.appendChild(button1);
+            div1.appendChild(button);
+            button.id="cancel";
+            button.addEventListener("click", func1);
+            button.style.width="80px";
+            button.style.backgroundColor= "red";
+            button.style.borderRadius="12px";
+            button.style.height="40px";
+            document.getElementById("myDynamicTable").appendChild(div1);
+        }
 
     var today = new Date();
     var dd = String(today.getDate()).padStart(2, '0');
@@ -196,37 +205,39 @@ function show1(){
     var bookedDetails = JSON.parse(localStorage.getItem('bookedDetails'));
 
     bookedDetails.forEach(element => {
-        var div1= document.createElement("div");
-    div1.style.display="flex";
-    div1.style.flexDirection="column";
-    div1.style.padding="20px";
-    var div2=document.createElement("div");
-    var div2t=document.createTextNode('UserId and Name'+' '+': '+ localStorage.getItem('x') +' / '+localStorage.getItem('w') );
-    div2.appendChild(div2t);
-    div1.appendChild(div2);
-    div2.style.padding="10px";
+        if(element[3]===localStorage.getItem('x')){
+            var div1= document.createElement("div");
+            div1.style.display="flex";
+            div1.style.flexDirection="column";
+            div1.style.padding="20px";
+            var div2=document.createElement("div");
+            var div2t=document.createTextNode('UserId and Name'+' '+': '+ localStorage.getItem('x') +' / '+localStorage.getItem('w') );
+            div2.appendChild(div2t);
+            div1.appendChild(div2);
+            div2.style.padding="10px";
 
-    var div3= document.createElement("div");
-    var div3t=document.createTextNode('Deprature and Destnation'+' '+': '+ element[0] +' / '+element[1] );
-    div3.appendChild(div3t);
-    div1.appendChild(div3);
-    div3.style.padding="10px";
-    var div4= document.createElement("div");
-    var div4t=document.createTextNode('Date'+' '+': '+element[2]);
-    div4.appendChild(div4t);
-    div1.appendChild(div4);
-    div4.style.padding="10px";
-    var button= document.createElement("button");
-    var button1=document.createTextNode('Cancel');
-    button.appendChild(button1);
-    div1.appendChild(button);
-    button.id="cancel";
-    button.addEventListener("click", func);
-    button.style.width="80px";
-    button.style.backgroundColor= "red";
-    button.style.borderRadius="12px";
-    button.style.height="40px";
-    document.getElementById("myDynamicTable").appendChild(div1);
+            var div3= document.createElement("div");
+            var div3t=document.createTextNode('Deprature and Destnation'+' '+': '+ element[0] +' / '+element[1] );
+            div3.appendChild(div3t);
+            div1.appendChild(div3);
+            div3.style.padding="10px";
+            var div4= document.createElement("div");
+            var div4t=document.createTextNode('Date'+' '+': '+element[2]);
+            div4.appendChild(div4t);
+            div1.appendChild(div4);
+            div4.style.padding="10px";
+            var button= document.createElement("button");
+            var button1=document.createTextNode('Cancel');
+            button.appendChild(button1);
+            div1.appendChild(button);
+            button.id="cancel";
+            button.addEventListener("click", func);
+            button.style.width="80px";
+            button.style.backgroundColor= "red";
+            button.style.borderRadius="12px";
+            button.style.height="40px";
+            document.getElementById("myDynamicTable").appendChild(div1);
+        }
 
     var today = new Date();
     var dd = String(today.getDate()).padStart(2, '0');
