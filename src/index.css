@@ -11,3 +11,483 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.main{
+  background-color: #ffffff;
+  width: 100%;
+  height: 450px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+.leftdiv{
+  width: 50%;
+  height: 400px;
+  float: left;
+  margin-left: 70px;
+}
+.rightdiv{
+  width: 40%;
+  height: 400px;
+  float: right;
+  z-index: 0;
+  box-sizing: border-box;
+} 
+.para1{
+  font-weight: 700;
+    color: #637381;
+}
+.head1{
+  font-size: 3.75em;
+}
+.para2{
+  font-size: 2.25em;
+}
+.submain1{
+  width: 100%;
+  height: 200px;
+  background-color: #FFF;
+}
+#head2{
+  margin-top: 40px;
+  font-size: 1.5em;
+  font-family: ShopifySans, Helvetica, Arial, sans-serif;
+  margin-bottom: 0.25em;
+}
+#para3{
+    margin-bottom: 0.9375em;
+    line-height: 1.5;
+    font-size: 1em;
+    margin-left: 60px;
+    color: #637381
+}
+#para4{
+  margin-bottom: 0.9375em;
+    line-height: 1.5;
+    font-size: 1em;
+    margin-left: 60px;
+    color: #637381
+}
+/* .form_main{
+  width: 100%;
+  height: 400px;
+  background-color: rgb(134, 56, 28);
+} */
+.form_header{
+  width: 100%;
+  height: 70px;
+  background-color: #FFF
+  
+}
+.form_header_heading{
+    height: 50px;
+    color: #212b35;
+    line-height: 1.2;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-left: 60px;
+    font-family: ShopifySans, Helvetica, Arial, sans-serif;
+}
+hr{
+  margin-left:5px;
+  margin-right: 60px;
+  border: 1px solid #d9d9d9;;
+}
+/* .step-counter{
+  color: #637381;
+    display: inline;
+    font-size: 1em;
+    font-weight: 700;
+} */
+.form_section{
+  background-color: #ffffff;
+  width: 100%;
+  height: 450px;
+}
+.form_left{
+  width: 60%;
+  background-color: #FFF;
+  height: 300px;
+  float: left;
+  margin-left: 50px;
+}
+.form_right{
+  background-color: #FFF;
+  width: 30%;
+  height: 300px;
+  float: right;
+  color: #212b35;
+  margin-right: 40px;
+  box-sizing: border-box;
+  border-top:    1px solid #d9d9d9;
+  border-right:  1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  border-left:   1px solid  #d9d9d9;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#file_border{
+  width: 300px;
+  height: 50px;
+  border-top:    2px dashed #d9d9d9;
+  border-right:  2px dashed #d9d9d9;
+  border-bottom: 2px dashed #d9d9d9;
+  border-left:   2px dashed  #d9d9d9;
+}
+#file{
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-bottom: 10px;
+}
+ a{
+  text-decoration: none;
+}
+#company_name{
+    height: 1.5em;
+    width: 44%;
+    padding: 1em 1em;
+    color: #212b35;
+    font-family: ShopifySans, Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    box-shadow: 0 0 0 1px #c4cdd5;
+    border: 0;
+    border-radius: 7px;
+    background-color: #ffffff;
+    
+}
+#mail{
+  float: right;
+  height: 1.5em;
+  width: 44%;
+  padding: 1em 1em;
+  color: #212b35;
+  font-family: ShopifySans, Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  box-shadow: 0 0 0 1px #c4cdd5;
+  border: 0;
+  border-radius: 7px;
+  background-color: #ffffff;
+  
+}
+#address{
+  margin-top: 20px;
+  height: 1.5em;
+  width: 96%;
+  padding: 1em 1em;
+  color: #212b35;
+  font-family: ShopifySans, Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  box-shadow: 0 0 0 1px #c4cdd5;
+  border: 0;
+  border-radius: 7px;
+  background-color: #ffffff;
+  
+}
+#city{
+    margin-top: 20px;
+    height: 1.5em;
+    width: 44%;
+    padding: 1em 1em;
+    color: #212b35;
+    font-family: ShopifySans, Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    box-shadow: 0 0 0 1px #c4cdd5;
+    border: 0;
+    border-radius: 7px;
+    background-color: #ffffff;
+}
+#zip{
+  margin-top: 20px;
+  float: right;
+  height: 1.5em;
+  width: 44%;
+  padding: 1em 1em;
+  color: #212b35;
+  font-family: ShopifySans, Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  box-shadow: 0 0 0 1px #c4cdd5;
+  border: 0;
+  border-radius: 7px;
+  background-color: #ffffff;
+}
+#country{
+    margin-top: 20px;
+    width: 48%;
+    padding: 1em 1em;
+    color: #212b35;
+    font-family: ShopifySans, Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    box-shadow: 0 0 0 1px #c4cdd5;
+    border: 0;
+    border-radius: 7px;
+    background-color: #ffffff;
+}
+#state{
+  margin-top: 20px;
+  float: right;
+  width: 48%;
+  padding: 1em 1em;
+  color: #212b35;
+  font-family: ShopifySans, Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  box-shadow: 0 0 0 1px #c4cdd5;
+  border: 0;
+  border-radius: 7px;
+  background-color: #ffffff;
+}
+.form_left1{
+  width: 90%;
+  background-color: #FFF;
+  height: 300px;
+  float: left;
+  margin-left: 50px;
+}
+#customer_name{
+  height: 1.5em;
+  width: 24%;
+  padding: 1em 1em;
+  color: #212b35;
+  font-family: ShopifySans, Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  box-shadow: 0 0 0 1px #c4cdd5;
+  border: 0;
+  border-radius: 7px;
+  background-color: #ffffff;
+  
+}
+#customer_mail{
+  margin-left: 20px;
+  height: 1.5em;
+  width: 24%;
+  padding: 1em 1em;
+  color: #212b35;
+  font-family: ShopifySans, Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  box-shadow: 0 0 0 1px #c4cdd5;
+  border: 0;
+  border-radius: 7px;
+  background-color: #ffffff;
+  
+}
+#customer_invoice{
+  margin-left: 20px;
+  height: 1.5em;
+  width: 24%;
+  padding: 1em 1em;
+  color: #212b35;
+  font-family: ShopifySans, Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  box-shadow: 0 0 0 1px #c4cdd5;
+  border: 0;
+  border-radius: 7px;
+  background-color: #ffffff;
+  
+}
+#customer_address{
+  margin-top: 20px;
+  height: 1.5em;
+  width: 52%;
+  padding: 1em 1em;
+  color: #212b35;
+  font-family: ShopifySans, Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  box-shadow: 0 0 0 1px #c4cdd5;
+  border: 0;
+  border-radius: 7px;
+  background-color: #ffffff; 
+}
+#customer_date{
+  margin-left: 20px;
+  height: 1.5em;
+  width: 24%;
+  padding: 1em 1em;
+  color: #212b35;
+  font-family: ShopifySans, Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  box-shadow: 0 0 0 1px #c4cdd5;
+  border: 0;
+  border-radius: 7px;
+  background-color: #ffffff;
+  
+}
+#customer_city{
+  margin-top: 20px;
+  height: 1.5em;
+  width: 24%;
+  padding: 1em 1em;
+  color: #212b35;
+  font-family: ShopifySans, Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  box-shadow: 0 0 0 1px #c4cdd5;
+  border: 0;
+  border-radius: 7px;
+  background-color: #ffffff;
+}
+
+#customer_state{
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 26%;
+  padding: 1em 1em;
+  color: #212b35;
+  font-family: ShopifySans, Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  box-shadow: 0 0 0 1px #c4cdd5;
+  border: 0;
+  border-radius: 7px;
+  background-color: #ffffff;
+}
+#customer_country{
+  margin-top: 20px;
+  width: 26%;
+  padding: 1em 1em;
+  color: #212b35;
+  font-family: ShopifySans, Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  box-shadow: 0 0 0 1px #c4cdd5;
+  border: 0;
+  border-radius: 7px;
+  background-color: #ffffff;
+}
+#customer_zip{
+  margin-top: 20px;
+ margin-left: 20px;
+  height: 1.5em;
+  width: 24%;
+  padding: 1em 1em;
+  color: #212b35;
+  font-family: ShopifySans, Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  box-shadow: 0 0 0 1px #c4cdd5;
+  border: 0;
+  border-radius: 7px;
+  background-color: #ffffff;
+}
+#item{
+  margin-top: 20px;
+  height: 1.5em;
+  width: 14%;
+  padding: 1em 1em;
+  color: #212b35;
+  font-family: ShopifySans, Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  box-shadow: 0 0 0 1px #c4cdd5;
+  border: 0;
+  border-radius: 7px;
+  background-color: #ffffff;
+}
+#Description{
+  margin-top: 20px;
+ margin-left: 20px;
+  height: 1.5em;
+  width: 23%;
+  padding: 1em 1em;
+  color: #212b35;
+  font-family: ShopifySans, Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  box-shadow: 0 0 0 1px #c4cdd5;
+  border: 0;
+  border-radius: 7px;
+  background-color: #ffffff;
+}
+#quantity{
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 1.5em;
+  width: 5%;
+  padding: 1em 1em;
+  color: #212b35;
+  font-family: ShopifySans, Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  box-shadow: 0 0 0 1px #c4cdd5;
+  border: 0;
+  border-radius: 7px;
+  background-color: #ffffff;
+}
+#price{
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 1.5em;
+  width: 5%;
+  padding: 1em 1em;
+  color: #212b35;
+  font-family: ShopifySans, Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  box-shadow: 0 0 0 1px #c4cdd5;
+  border: 0;
+  border-radius: 7px;
+  background-color: #ffffff;
+}
+#span1{
+  margin-left: 10px;
+  display: inline;
+}
+.plus{
+  margin-top: 20px;
+}
+#addlink{
+  margin-left: 10px;
+  text-decoration: blue;
+}
+
+.last_form_right{
+  background-color: #ffffff;
+  width: 40%;
+  height: 250px;
+  float: right;
+  color: #212b35;
+  margin-right: 40px;
+  box-sizing: border-box;
+  /* border-top:    1px solid #d9d9d9;
+  border-right:  1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  border-left:   1px solid  #d9d9d9; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 20px;
+}
+.last_form_left{
+  width: 50%;
+  background-color:white;
+  height: 200px;
+  float: left;
+  margin-left: 50px;
+  
+}
+#memo{
+  width: 100%;
+  background-color:white;
+  height: 200px;
+  border-top:    1px solid #d9d9d9;
+  border-right:  1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  border-left:   1px solid  #d9d9d9;
+}
+.tot{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;  
+  width: 269px;
+ 
+
+}
+.Blue{
+  width: 100%;
+  height: 100px;
+  background-color: rgb(20, 20, 46);
+  color: #FFF;
+}
+#submit{
+  padding: 10px;
+  margin-top: 20px; 
+  background-color: rgb(20, 20, 46);
+  color:#fff;
+  font-size: 17px;
+  font-weight: 550;
+  border:none;
+  border-radius: 10px;
+}

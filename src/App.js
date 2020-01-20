@@ -1,26 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './index.css';
+import {Component} from 'react';
+import Main from './Components/Main';
+import {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
+import Invoice from './Components/Invoice';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+class App extends Component {
+  state={
+    name:{}
+  }
+
+  changestate=(ab)=>{
+    // console.log(ab);
+    this.setState({
+      name:ab
+    })
+  }
+
+
+  render(){
+      return (
+        <div className="App">
+          <Router>
+              <Switch>
+                  <Route path="/" exact component={()=> <Main name={this.changestate.bind(this)}/>}/>
+                  <Route path="/home" component={()=> <Invoice name={this.state.name}/>}/>
+              </Switch>
+            </Router>
+          
+        </div>
   );
+      }
 }
 
 export default App;
