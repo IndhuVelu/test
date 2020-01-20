@@ -1,0 +1,124 @@
+.album_text{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.album{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.inside_album{
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    align-items:space-evenly ;
+    justify-content: center;
+   
+}
+.right{
+    width: 40%;
+    display: flex;
+    align-items: center ;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.album_img{
+    
+    width: 100%;
+    height: auto;
+    margin-left: 50px;
+    margin-top: 50px;
+  
+}
+.btn {
+    background-color: rgb(157, 120, 190,0.5);
+    display: flex;
+    align-items: flex-start;
+    justify-content: stretch;
+    margin-left: 20px;
+   
+}
+#album-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 180px;
+}
+#album-folder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 180px;
+}
+#save_btn{
+    
+    background-color: rgb(157, 120, 190,0.5);
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+}
+.progress_style{
+    display: flex;
+    align-items: flex-start;
+    justify-content: stretch;
+    margin-left: 20px;
+    margin-top: 50px;
+    width: 70%;
+    bottom: 0;
+    height: 100px;
+}
+#uploader{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20%;
+}
+.img_insert{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly
+}
+#upload{
+    margin-top: 10px;
+    margin-left: 20px;
+    background-color: rgb(157, 120, 190,0.8);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+#album-song{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 180px;
+}
+#play{
+    margin-top: 10px;
+    background-color: rgb(157, 120, 190,0.8);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
