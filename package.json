@@ -1,5 +1,4 @@
 {
-  "proxy": "http://localhost:3002",
   "name": "music_player",
   "version": "0.1.0",
   "private": true,
@@ -7,13 +6,19 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
+    "antd": "^3.26.8",
     "firebase": "^7.6.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.24.0",
     "node-lame": "^1.2.0",
     "react": "^16.12.0",
     "react-audio-player": "^0.11.1",
     "react-dom": "^16.12.0",
     "react-hot-loader": "^4.12.18",
-    "react-scripts": "3.3.0"
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.3.0",
+    "react-seatmap": "^0.1.2",
+    "react-to-pdf": "0.0.10"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,0 +1,18 @@
+.Details{
+    background-color: white;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+select{
+    width: 100%;
+    height: 35px;
+    border: none;
+    padding: 5px;
+    border: 1px solid #aaa9a9;
+    border-radius: 3px;
+}
