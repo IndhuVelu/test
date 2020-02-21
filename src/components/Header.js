@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './Header.css'
-import { Redirect } from 'react-router-dom'
+import { Redirect ,withRouter} from 'react-router-dom'
 class Header extends Component {
     constructor(props) {
         super(props)
@@ -12,7 +12,7 @@ class Header extends Component {
     componentDidMount = async()=>{
         if(localStorage.getItem('token'))
 
-       {await fetch('http://localhost:3008/head',{
+       {await fetch('http://localhost:3050/head',{
             method:'post',
             body:JSON.stringify({
              token:JSON.parse( localStorage.getItem('token')).token,
@@ -37,12 +37,13 @@ class Header extends Component {
         
     }
     render() {
-        // console.log(JSON.parse(localStorage.getItem('token')).token);
+     
         return (
             (!localStorage.getItem('token')) ? <Redirect  to ="/home"/>:
             <div>
                 <div className="full">
-                  <div className="head"> <h3> Train Booking </h3></div>
+                    <div className="logo"><img src="https://images.squarespace-cdn.com/content/5b2bda42cc8fed2d1f0118d2/1529613311473-3XH6F88AOIA45ADX956W/Spark_Logo.png?content-type=image%2Fpng" alt="logo" width="90px" height="70px"/></div>
+                  <div className="head"> <h3>  Spark Event Management </h3></div>
                   <div className="user">{this.state.authdata.user.name}
                    <div className="logbtn"> <a  className="whitelink" onClick={e => this.handlelogout(e)}> Logout </a> </div> </div>
                    
@@ -54,4 +55,4 @@ class Header extends Component {
     }
 }
 
-export default Header
+export default withRouter(Header)

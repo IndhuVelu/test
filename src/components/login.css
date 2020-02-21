@@ -4,6 +4,12 @@ body {
     /* background: url('http://dailyhdwallpaper.com/wp-content/uploads/Abstract-Purple-Background-Images-Wallpaper.jpg') no-repeat center center fixed;  */
     background-size: cover;
 }
+.mained{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 .login {
     color: rgb(16, 124, 128);
     margin-left: 20px;
@@ -67,9 +73,8 @@ input:focus{
   background-color: #ffffff;
   display: flex;
   justify-content: center;
-  border: 5px solid #ffffff;
+  border: 5px solid #5c5c5c;
   width: 470px;
-  margin-left: 300px;
   border-radius: 14%;
 }
 .form_main2{
@@ -77,9 +82,9 @@ input:focus{
   background-color: #ffffff;
   display: flex;
   justify-content: center;
-  border: 5px solid #ffffff;
+  border: 5px solid #5c5c5c;
   width: 500px;
-  margin-left:400px;
+  /* margin-left:400px; */
   border-radius: 20%;
   margin-top: 126px;
 
@@ -95,3 +100,27 @@ input:focus{
 .reset_form1 div{
   margin-top: 25px;
 }
+@media screen and (max-width:400px) {
+  .form_main{
+    height: 470px;
+     width: 350px;
+     align-items: center;
+   
+  }
+  .body{
+    padding: 0 0 0 0;
+  }
+}
+@media screen and (max-width:600px) {
+ 
+  .body{
+    padding: unset;
+  }
+}
+/* @media screen and (max-width:400px) {
+ 
+  .login_form{
+   
+    height: 100px;
+  }
+} */

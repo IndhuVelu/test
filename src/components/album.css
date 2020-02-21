@@ -44,10 +44,11 @@ body{
 }
 .btn {
     background-color: #FFFF;
-    display: flex;
-    align-items: flex-start;
-    justify-content: stretch;
-    margin-left: 20px;
+    margin-top: 20px;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-around; */
+    /* margin-left: 20px; */
     border-radius: 8px;
    
 }

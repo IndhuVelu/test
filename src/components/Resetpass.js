@@ -64,7 +64,7 @@ class Resetpass extends Component {
 
         e.preventDefault();
         if(this.state.newpass === this.state.confrimpass){
-            fetch('http://localhost:3008/ResetEmail',{
+            fetch('http://localhost:3050/ResetEmail',{
             method:"POST",
             body:JSON.stringify({
                 newpass:this.state.password,

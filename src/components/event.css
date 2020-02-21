@@ -1,0 +1,13 @@
+.events{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  
+}
+.myCal{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    margin-right: 37px;
+    margin-top: -39px;
+}

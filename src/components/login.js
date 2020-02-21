@@ -45,7 +45,7 @@ class Login extends Component {
         }
        
 
-        fetch('http://localhost:3008/login',{
+        fetch('http://localhost:3050/login',{
             method:"POST",
             body:JSON.stringify({
               name:this.state.username,
@@ -59,7 +59,7 @@ class Login extends Component {
             if (data){
                 localStorage.setItem('token',JSON.stringify(data))
                 // localStorage.setItem('show',1)
-                this.props.history.push('/Train')
+                this.props.history.push('/Events')
                 // window.location.reload();
             }
             else{
@@ -76,6 +76,7 @@ class Login extends Component {
         return (
             // (localStorage.getItem('token')) ? <Redirect  to ="/Album"/>:
             <div className="body">
+                <div className="mained">
                  <div className="form_main">
                 <form>
                     <div className="login_form">
@@ -94,6 +95,7 @@ class Login extends Component {
                         </center>
                     </div>
                 </form>
+                </div>
                 </div>
                 </div>
         )

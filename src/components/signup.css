@@ -1,8 +1,8 @@
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     /* background: url('https://image.freepik.com/free-photo/pink-headphones-colored-surface_23-2148182034.jpg') no-repeat center center fixed;  */
-    background-size: cover;
-    background:linear-gradient(to right,#2193b0 , #6dd5ed) ;
+    /* background-size: cover;
+    background:linear-gradient(to right,#2193b0 , #6dd5ed) ; */
 }
 .body{
 
@@ -46,7 +46,7 @@ input:focus{
   input{
     width: 270px;
     font-size: 16px;
-    border-bottom: 1.5px solid rgb(136, 233, 236);
+    border-bottom: 1.5px solid #5c5c5c;
     background: transparent;
     border-top:none ;
     border-right: none;
@@ -83,13 +83,27 @@ input:focus{
   background-color: #ffffff;
     display: flex;
     justify-content: center;
-    border: 5px solid #ffffff;
+    border: 5px solid #5c5c5c;
     width: 473px;
-    margin-left: 300px;
+    /* margin-left: 300px; */
     padding: 24px;
     border-radius: 14%;
   
 }
 a{
   color:rgb(16, 124, 128);
+}
+@media screen and (max-width:300px) {
+  .form_main1{
+    
+    border: none;
+  
+  }
+
+}
+.mained1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }

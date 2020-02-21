@@ -17,7 +17,7 @@ class Password_reset extends Component {
     }
     handleReset=(e)=> {
         e.preventDefault();
-        fetch('http://localhost:3008/email',{
+        fetch('http://localhost:3050/email',{
             method:"POST",
             body:JSON.stringify({
                 changemail:this.state.changemail

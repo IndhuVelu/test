@@ -91,7 +91,7 @@ class Register extends Component {
     }
     else{
       console.log(this.state)
-        fetch('http://localhost:3008/signup',{
+        fetch('http://localhost:3050/signup',{
             method:"POST",
             body:JSON.stringify({
               name:this.state.fullName,
@@ -99,7 +99,7 @@ class Register extends Component {
               password:this.state.password,
               
             }),
-            headers:{'Content-Type':'application/json'},
+            // headers:{'Content-Type':'application/json'},
           })
           .then(res=> res.json())
           
@@ -134,6 +134,7 @@ class Register extends Component {
     const { errors } = this.state;
     return (
       <div className="body">
+        <div className="mained1">
         <div className="form_main1">
           <form onSubmit={this.handleSubmit} noValidate>
               <div className="signup_form">
@@ -180,6 +181,7 @@ class Register extends Component {
             </div>
             
           </form>
+        </div>
         </div>
      </div>
     );

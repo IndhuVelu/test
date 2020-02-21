@@ -6,8 +6,8 @@ import {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
 import Validate_signup from './components/Validate_signup'
 import Resetpass from './components/Resetpass'
 import Password_reset from './components/Password_reset';
-import Book from './components/Book';
-import Mybookings from './components/Mybookings'
+import Calenders from './components/Calenders';
+
 function App() {
  
   return (
@@ -19,9 +19,8 @@ function App() {
               <Switch>
                   <Route path="/"  exact component={ Validate_signup}/>
                   <Route  path="/home" exact component={Login}/>
-                  <Route  path="/Train" exact component={Main}/>
-                  <Route  path="/Book" exact component={Book}/>
-                  <Route  path="/Mybookings" exact component={Mybookings}/>
+                  <Route  path="/Events" exact component={Main}/>
+                  <Route  path="/calender" exact component={Calenders}/>
                   <Route  path="/password_reset" exact component={Password_reset}/>
                   <Route  path="/Resetpass/:id" exact component={Resetpass}/>
                   <Route path="*" component={() => "404 NOT FOUND"} />
