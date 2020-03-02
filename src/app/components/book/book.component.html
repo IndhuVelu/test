@@ -1,0 +1,102 @@
+ 
+<div class="Details" *ngFor ="let obj of dataarray let i=index" >
+   
+    <div>
+        <mat-form-field>
+            <mat-label>Select The Role</mat-label>
+            <mat-select   name="value{{i}}"   [(ngModel)]="obj.value">
+                <mat-option value=" ">Gender</mat-option>
+              <mat-option value="Male">Male</mat-option>
+              <mat-option value="Female">Female</mat-option>
+              <mat-option value="Transgender">Transgender</mat-option>
+            </mat-select>
+          </mat-form-field>
+  
+    </div>
+   <div>  <mat-form-field appearance="outline">
+            <mat-label>Name</mat-label>
+                <input matInput [(ngModel)]="obj.name"  name="name{{i}}" >
+            </mat-form-field>
+    </div>
+    <div> 
+        <mat-form-field appearance="outline">
+            <mat-label>Age</mat-label>
+            <input  type="number" matInput [(ngModel)]="obj.age"  name="age{{i}}" >
+        </mat-form-field>
+    </div>
+    <div *ngIf="i!=0">   <button  mat-flat-button color="primary" (click)="onRemove(i)" >Remove</button>  </div>
+</div>
+
+<div class="header">
+    <button  mat-flat-button color="primary" (click)="onAdd()">Add</button>
+ </div>
+ 
+
+ <div class="train">
+    <!--   <div class="exit exit--front train-body"></div> -->
+      <div class="exit front train-body">
+        <div></div><div></div><div></div>
+      </div>
+
+    <ol class="wagon train-body">
+      <li class="row row--1">
+            <ol class="seats">
+              <li class="seat">
+                <div class="seat" *ngFor="let cat of array">
+                  <input  [(ngModel)]="cat.checked" name="{{ cat.id }}" type="checkbox" id="{{cat.id}}"  (change)="onChangeCategory($event, cat)">
+                  <label id="label" for="{{cat.id}}">  {{cat.id}} </label>
+               </div>
+        </li>
+            </ol>
+
+             <div></div>
+              <li class="row row--2">
+                <ol class="seats">
+                  <li class="seat">
+                    <div  class="seat" *ngFor="let cat of array1">
+                      <input  [(ngModel)]="cat.checked" name="{{ cat.id }}" type="checkbox" id="{{cat.id}}"  (change)="onChangeCategory($event, cat)">
+                      <label  id="{{cat.id}}"  for="{{cat.id}}">  {{cat.id}} </label>
+                   </div>
+                  </li>
+               
+                </ol>
+              </li>
+        
+              <div></div>
+              <li class="row row--3">
+                <ol class="seats">
+                  <li class="seat">
+                    <div  class="seat" *ngFor="let cat of array2">
+                      <input   [(ngModel)]="cat.checked" name="{{ cat.id }}" type="checkbox" id="{{cat.id}}"  (change)="onChangeCategory($event, cat)">
+                      <label  id="label3" for="{{cat.id}}">  {{cat.id}} </label>
+                   </div>
+                  </li>
+               
+                </ol>
+              </li>
+              <div></div>
+              <li class="row row--4">
+                <ol class="seats">
+                  <li class="seat">
+                    <div  class="seat" *ngFor="let cat of array3">
+                      <input  [(ngModel)]="cat.checked" name="{{ cat.id }}" type="checkbox" id="{{cat.id}}"  (change)="onChangeCategory($event, cat)">
+                      <label  id="label4"  for="{{cat.id}}">  {{cat.id}} </label>
+                   </div>
+                  </li>
+               
+                </ol>
+              </li>
+    </ol>
+    
+  </div>
+    <div class="submit"> <button  mat-flat-button color="primary" (click)="onSubmit()">Send Email</button> </div>
+    <div  class="msg" *ngIf="this.msg==1">
+          <span> Message Send </span>
+    </div>
+
+  
+    
+
+
+ 
+ 

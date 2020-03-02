@@ -1,0 +1,119 @@
+.main {
+    display: flex;
+    justify-content: center;
+    background-color: #2d67b2;
+    height: 200px;
+    margin-top: 50px;
+}
+
+.form-box {
+    margin-top: 50px;
+    width: 80%;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    text-align: center;
+    padding: 1rem 2rem;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 55px;
+   
+}
+#from_bar{
+    font: inherit;
+    background: transparent;
+    color: currentColor;
+    outline: none;
+    border:none;
+    height: 44px;
+    margin-top: -15px;
+    width: 200px;
+}
+.heading1{
+    width: 85%;
+    padding: 20px;
+    margin: 10px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+     background-color: #FFF; 
+     box-shadow: 40px 60px 70px 80px rgba(104, 103, 103, 0.13);
+    font-family: 'Open Sans', sans-serif, Tahoma, Arial;
+    font-size: 15px;
+    font-weight: 530;
+    border-radius: 12px;
+    //  height: 100px; 
+    
+}
+.heading1 div{
+    margin-left: -35px;
+    width: 120px;
+}
+.heading{
+    width: 85%;
+    margin: 10px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Open Sans', sans-serif, Tahoma, Arial;
+    font-size: 18px;
+    font-weight: 600;
+}
+#arrange{
+    display: flex;
+    margin-left: -40px;
+}
+#arrives{
+    margin-left: 30px;
+}
+#depart{
+    margin-left: 20px; 
+}
+.mybook{
+  
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+.iconic{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    font-size:10px;
+}
+.btn-default {
+    color: white; 
+  }
+.btn-change {
+    color: Red;
+    background-color: white;
+  }
+  .whole{
+    z-index: 0;
+    margin-top: -20px;
+    width: 16%;
+    display: grid;
+    grid-template-columns:  auto;
+    margin-left: 154px;
+}
+#wholedisplay_to{
+    margin-left: 412px;
+    width: 34%;
+}
+ .whole div div{
+    background-color: #FFF;
+    margin-top:-34px;
+    height: 50px;
+    font-size: 15px;
+}
+.whole>div>div>div>li {
+    list-style-type: none;
+    font-size: 18px;
+} 
+p{
+    background-color:#2d67b2 ;
+}
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,15 @@
+<div class="main">
+    <mat-card class="form-box">
+
+        <mat-card-title>Change Authority</mat-card-title>
+        <mat-form-field appearance="outline">
+            <mat-label>UserName</mat-label>
+            <input matInput [(ngModel)]="user.Name" >
+        </mat-form-field>
+        <button mat-flat-button color="primary"  (click)="onUserToAdmin()" >User To Admin</button> <br/>
+        <button mat-flat-button color="primary"   (click)="onAdminToUser()">Admin To User</button> <br/>
+        {{changer}}
+    </mat-card>
+
+</div>
+

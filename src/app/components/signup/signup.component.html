@@ -1,0 +1,86 @@
+<div class="main">
+    <mat-card class="form-box">
+
+        <mat-card-title>Train Ticket Booking</mat-card-title>
+
+        <mat-card-subtitle> Signup </mat-card-subtitle>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Name</mat-label>
+            <input matInput [(ngModel)]="user.Name"  id="name" name="name"   required minlength="4"  #name="ngModel" >
+           
+        </mat-form-field>
+        <div *ngIf="name.invalid && (name.dirty || name.touched)"
+        class="alert alert-danger">
+            <div *ngIf="name.errors.required">
+                Name is required.
+            </div>
+            <div *ngIf="name.errors.minlength">
+                     Name must be at least 4 characters long.
+             </div>
+         </div>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput type="email" [(ngModel)]="user.Email"  required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" 
+            id="email" name="email"  #email="ngModel">
+            
+        </mat-form-field>
+        <div *ngIf="email.errors &&(email.touched || email.dirty)" class="aler alert-danger">
+            <div [hidden]="!email.errors?.pattern">
+              Invalid pattern
+            </div>
+          </div>
+      
+
+        <mat-form-field appearance="outline">
+            <mat-label>Password</mat-label>
+            <input type="password" matInput [(ngModel)]="user.Password" id="pass" name="pass"   required minlength="4"  #pass="ngModel" >
+        </mat-form-field>
+        <div *ngIf="pass.invalid && (pass.dirty || pass.touched)"
+        class="alert alert-danger">
+            <div *ngIf="pass.errors.required">
+                Password is required.
+            </div>
+            <div *ngIf="pass.errors.minlength">
+                     Password must be at least 4 characters long.
+             </div>
+         </div>
+
+        <mat-form-field appearance="outline">
+            <mat-label> Confrim Password</mat-label>
+            <input type="password" matInput  [(ngModel)]="user.confrimpassword"id="pass" name="pass"   required minlength="4"  #pass="ngModel" >
+        </mat-form-field>
+        <div *ngIf="pass.invalid && (pass.dirty || pass.touched)"
+        class="alert alert-danger">
+            <div *ngIf="pass.errors.required">
+                Password is required.
+            </div>
+            <div *ngIf="pass.errors.minlength">
+                     Password Does't match
+             </div>
+         </div>
+
+        <mat-form-field>
+            <mat-label>Select The Role</mat-label>
+            <mat-select    [(ngModel)]="user.value" required>
+              <mat-option value="1">Admin</mat-option>
+              <mat-option value="0">User</mat-option>
+        
+            </mat-select>
+          </mat-form-field>
+        
+        <mat-card-actions>
+            <button mat-raised-button color="primary" (click)="onSubmit()" >Signup</button>
+        </mat-card-actions>
+
+        <mat-card-footer>
+            <div class="signin">
+                <h3> Already Have an account?</h3>
+                <button  [routerLink]="['login']" ><h3>Signin</h3></button>
+            </div>
+        </mat-card-footer>
+
+    </mat-card>
+
+</div>

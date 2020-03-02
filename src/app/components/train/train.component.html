@@ -1,0 +1,72 @@
+
+<div class="mybook">
+    <h3 id="book"> <a href="/mybooking" >MyBookings</a> </h3>
+      </div>
+ 
+<div class="main">
+    <mat-card class="form-box">
+
+        <mat-form-field appearance="outline">
+            <mat-label>From</mat-label>
+            <input matInput [(ngModel)]="user.from" [value]='user.from' (input)="handleFrom($event)" >
+        </mat-form-field>
+       
+
+        <mat-form-field appearance="outline">
+            <mat-label>To</mat-label>
+            <input matInput [(ngModel)]="user.to" [value]="user.to"  (input)="handleTo($event)" >
+        </mat-form-field>
+        
+        <input   id="from_bar" type="date" min="2020-02-12" (input)="onsearch()" [(ngModel)]="user.date"  required/>
+    </mat-card>
+
+</div>
+<div class="whole" id="whole" >
+    <div *ngIf="this.disfrom==1">
+        <div id="wholedisplay_from" *ngFor="let element of from1" >
+             <div> <li class="fromdisplay" id="fromdisplay"     [attr.data-fromvalue]="element" (click)="handledisplay($event)"  >{{element}}</li> </div>
+        </div>
+    </div>
+    <div *ngIf="this.disfrom==0">
+       <p></p>
+    </div>
+    <div *ngIf="this.disto==1">
+        <div id="wholedisplay_to" *ngFor="let element of to1">
+            <div> <li class="todisplay"  id="todisplay"  [attr.data-tovalue]="element" (click)="handledisplayTo($event)"  >{{element}}</li> </div>
+        </div>
+    </div>
+    <div *ngIf="this.disto==0">
+     <p></p>
+    </div>
+</div>
+<div class="heading" id="head" *ngIf="this.user.from=='' && this.user .to == '' " >
+   
+</div>
+<div class="heading" id="head"   *ngIf="this.user.from !=='' && this.user .to !== '' ">
+    <div id="arrange"><a >Train Name</a> <span class="iconic"> <i class="fa fa-chevron-up icon-up"  (click)="handleName()"></i>  <i class="fa fa-chevron-down icon-down"   (click)="handleRevName()"></i> </span> </div>
+    <div id="arrange"> <a id="depart"> Depart  </a>  <span class="iconic">  <i class="fa fa-chevron-up icon-up"   (click)="handleDepart()"></i> <i class="fa fa-chevron-down icon-down"  (click)="handleRevDepart()"></i> </span> </div>
+    <div id="arrange"> <a id="arrives" >Arrives  </a>   <span class="iconic"> <i class="fa fa-chevron-up icon-up"   (click)="handleArrival()"></i> <i class="fa fa-chevron-down icon-down"  (click)="handleRevArrival()"></i> </span> </div>
+    <div></div>
+    <div></div>
+    
+</div>
+
+<div class="heading1" *ngFor="let register of register1" ng-controller> 
+    <div>
+       {{register.TrainName}}
+    </div>
+    <div>
+        {{tConvert(register.Depart_Time)}}   <br/>
+        {{this.user.date | date : "dd MMM yyyy"}}
+    </div>
+    <div>
+        {{tConvert(register.Arrival_Time)}}  <br/>
+        {{this.user.date | date : "dd MMM yyyy"}}
+    </div>
+    <div>
+       
+        <button mat-flat-button color="primary" [routerLink]="['/book',register.id]" >Book Now </button> 
+    </div>
+
+</div>
+
