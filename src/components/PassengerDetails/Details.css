@@ -1,0 +1,39 @@
+.Details {
+    background-color: white;
+    height: 80px;
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 2px 2px 6px #000000b8;
+    font-family: Body,Quicksand,sans-serif;
+    color: #082b71;
+    font-weight: 700;
+}
+select {
+    width: 100%;
+    height: 35px;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #d6d6d6;
+    background: #ffffff;
+    font-weight: 700;
+    color: #082b71;
+    font-family: Body,Quicksand,sans-serif;
+}
+@media screen and (max-width: 600px) and (min-width:100px) {
+    #Details {
+
+        background-color: white;
+        max-width: 50%;
+
+        border-radius: 12px;
+    }
+
+}
+@media screen and (max-width:100vw) and (min-width:600px) {
+    #Details {
+        width: 80%;
+    }
+}

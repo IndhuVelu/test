@@ -1,35 +1,38 @@
 import React from 'react';
 import './App.css';
-import Main from './components/main';
-import Login from './components/login';
-import {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
-import Validate_signup from './components/Validate_signup'
-import Resetpass from './components/Resetpass'
-import Password_reset from './components/Password_reset';
-import Book from './components/Book';
-import Mybookings from './components/Mybookings'
+import Main from './components/Main/main';
+import Login from './components/Login/login';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Validate_signup from './components/Signup/ValidateSignup'
+import Resetpass from './components/ResetPassword/ResetPass'
+import PasswordReset from './components/ResetPassword/PasswordReset';
+import Book from './components/Book/Book';
+import MyBookings from './components/MyBookings/MyBookings'
+import Chatter from './components/Chatter/Chatter'
+
 function App() {
- 
-  return (
-    
-    <div className="App">
-    
-        <Router>
-          <div>
-              <Switch>
-                  <Route path="/"  exact component={ Validate_signup}/>
-                  <Route  path="/home" exact component={Login}/>
-                  <Route  path="/Train" exact component={Main}/>
-                  <Route  path="/Book" exact component={Book}/>
-                  <Route  path="/Mybookings" exact component={Mybookings}/>
-                  <Route  path="/password_reset" exact component={Password_reset}/>
-                  <Route  path="/Resetpass/:id" exact component={Resetpass}/>
-                  <Route path="*" component={() => "404 NOT FOUND"} />
-              </Switch>
-              </div>
+
+    return (
+
+        <div className="App">
+
+            <Router>
+                <div>
+                    <Switch>
+                        <Route path="/" exact component={Validate_signup}/>
+                        <Route path="/login" exact component={Login}/>
+                        <Route path="/train" exact component={Main}/>
+                        <Route path="/book" exact component={Book}/>
+                        <Route path="/myBookings" exact component={MyBookings}/>
+                        <Route path="/passwordReset" exact component={PasswordReset}/>
+                        <Route path="/resetPass/:id" exact component={Resetpass}/>
+                        <Route path="/chatter/:id" exact component={Chatter}/>  
+                        <Route path="*" component={() => "404 NOT FOUND"}/>
+                    </Switch>
+                </div>
             </Router>
-    </div>
-  );
+        </div>
+    );
 }
 
 export default App;

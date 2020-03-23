@@ -1,30 +1,48 @@
 #main{
-    margin-top: 50px;
+    margin-top: 70px;
     display: flex;
-    width: 100vw;
+    width: 90vw;
+    height: 150px;
+    margin-left: 38px;
     align-items: center;
     justify-content: space-around;
+    box-shadow: 2px 2px 6px #000000b8;
+    box-sizing: border-box;
+}
+#origin{
+    display: flex;
+    flex-direction: column;
 }
 #from_bar{
-    color: #000;
-    background: #fff;
-    border-radius: 3px;
+    font-family: Body,Quicksand,sans-serif;
+    color: #082b71;
+    font-weight: 700;
     padding: 12px 10px;
     width: 19%;
-    border: 0;
-    outline: 0;
-    font-size: 16px;
+    font-size: 16px; 
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #d6d6d6;
 }
-
+#from_bar:hover {
+    border: 2px solid #8f31a1;
+}
+#to_bar:hover{
+    border: 2px solid #8f31a1;
+}
 #to_bar{
-    color: #000;
+    border: 1px solid #d6d6d6;
+    font-family: Body,Quicksand,sans-serif;
+    color: #082b71;
     background: #fff;
-    border-radius: 3px;
-    padding: 12px 10px;
-    width: 19%;
-    border: 0;
-    outline: 0;
+    font-weight: 700;
     font-size: 16px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
 }
 .search{
     padding: 30px;
@@ -48,6 +66,9 @@
     width: 100%;
     height: auto;
     margin-top: 5%;
+    color: #082b71;
+    font-weight: 700;
+    font-family: Body,Quicksand,sans-serif;
 }
 .heading{
     width: 85%;
@@ -55,9 +76,10 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font-family: 'Open Sans', sans-serif, Tahoma, Arial!important;
     font-size: 18px;
-    font-weight: 600;
+    font-family: Body,Quicksand,sans-serif;
+    color: #082b71;
+    font-weight: 700;
 }
 .heading1{
     width: 85%;
@@ -66,16 +88,19 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #FFF;
-    font-family: 'Open Sans', sans-serif, Tahoma, Arial!important;
     font-size: 15px;
-    font-weight: 530;
-    border-radius: 12px;
-    
+    font-weight: 550;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 6px #000000b8;
+    margin-bottom: 20px;
+    font-family: Body,Quicksand,sans-serif;
+    color: #082b71;
 }
 .heading1 div{
     margin-left: -35px;
     width: 120px;
+   
 }
 #head{
     display: none;
@@ -85,15 +110,18 @@
     margin: 10px auto 0 auto;
     display: table;
     background-color: #fff;
+    
 }
-a{
+#book{
     cursor: pointer;
     background-color: transparent;
     text-decoration: none;
-    color: #2196f3;
+    color: #082b71;
 }
 .book{
-    background: #f26722;
+   
+    background-color: #00b9f5;
+    border-color: #00b9f5;
     color: #fff;
     font-size: 13px;
     padding: 10px 10px;
@@ -111,6 +139,7 @@ a{
     flex-direction: column;
     margin-left: 10px;
     font-size:10px;
+    cursor: pointer;
 }
 #arrives{
     margin-left: 30px;
@@ -121,7 +150,9 @@ a{
 #message{
     font-size: 20px;
 }
-
+.fromdisplay , .todisplay{
+    cursor: pointer;
+}
 
 .whole{
     margin-top: 67px;
@@ -139,11 +170,19 @@ a{
     width: 19vw;
     height: 50px;
     font-size: 15px;
+    /* box-shadow: 2px 2px 6px #000000b8; */
 }
 .whole>div>div>li {
     list-style-type: none;
     font-size: 18px;
+    box-shadow: 4px 4px 4px #000000b8;
 } 
+#main label{
+    font-weight: 700;
+    padding-left: 9px;
+    font-size: 1.6rem;
+    color: #082b71;
+}
 
 
 
@@ -152,14 +191,17 @@ a{
 .icon-ups{
     font-size: 20px;
     color: red;
+    cursor: pointer;
 }
 .icon-ups1{
     font-size: 20px;
     color: red;
+    cursor: pointer;
 }
 .icon-ups2{
     font-size: 20px;
     color: red;
+    cursor: pointer;
 }
 
 
@@ -167,31 +209,46 @@ a{
 .icon-up{
     font-size: 10px;
     color: black;
+    cursor: pointer;
 }
 .icon-up1{
     font-size: 10px;
     color: black;
+    cursor: pointer;
 }
 .icon-up2{
     font-size: 10px;
     color: black;
+    cursor: pointer;
 }
 
-/* 
-.icon-down{
+
+.icon-downs{
     font-size: 20px;
     color: red;
+    cursor: pointer;
 }
-.icon-down1{
+.icon-downs1{
     font-size: 20px;
     color: red;
+    cursor: pointer;
 }
-.icon-down2{
+.icon-downs2{
     font-size: 20px;
     color: red;
-} */
+    cursor: pointer;
+}
 
 
 .mybook{
-    margin-left: 1130px;
+     margin-left: 1130px; 
+}
+.inAvailable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Body,Quicksand,sans-serif;
+    color: #082b71;
+    font-weight: 700;
+    font-size: 28px;
 }
