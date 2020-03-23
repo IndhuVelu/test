@@ -1,20 +1,20 @@
 'use strict';
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('reserved_Details', {
+    return queryInterface.createTable('reservedDetails', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      Trainid: {
+      trainId: {
         type: Sequelize.INTEGER
       },
       seat: {
         type: Sequelize.INTEGER
       },
-      signup_name: {
+      signupName: {
         type: Sequelize.STRING
       },
       status: {
@@ -31,6 +31,6 @@ module.exports = {
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('reserved_Details');
+    return queryInterface.dropTable('reservedDetails');
   }
 };

@@ -2,7 +2,7 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.bulkInsert('Train_Details', [{
+    return queryInterface.bulkInsert('TrainDetails', [{
       from: 'salem',
       to: 'chennai',
       TrainName: 'kovai Exp',
@@ -132,6 +132,6 @@ module.exports = {
     }], {});
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.bulkDelete('Train_Details', null, {});
+    return queryInterface.bulkDelete('TrainDetails', null, {});
   }
 };

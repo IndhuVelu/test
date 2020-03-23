@@ -3,9 +3,6 @@ const con ={}
 const sequelize = new Sequelize('Trains', 'root', 'Nandhini@31', {
   host: 'localhost',
   dialect:  'mysql' ,
-  
-
-
   pool: {
     max: 5,
     min: 0,

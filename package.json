@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "globals": "npm i -g cross-env",
+    "start": " cross-env NODE_ENV=development &  nodemon index.js",
+    "test": "cross-env NODE_ENV=test & nodemon index.js",
+    "tst": "cross-env NODE_ENV=production & nodemon index.js"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +16,7 @@
     "body-parser": "^1.19.0",
     "consolidate": "0.15.1",
     "cors": "^2.8.5",
+    "cross-env": "^7.0.1",
     "csv-writer": "^1.6.0",
     "download-file": "^0.1.5",
     "dust": "0.3.0",
@@ -30,7 +33,8 @@
     "node-excel-export": "^1.4.4",
     "nodemailer": "^6.4.2",
     "nodemon": "^2.0.2",
-    "sequelize": "^5.21.3"
+    "sequelize": "^5.21.3",
+    "socket.io": "^2.3.0"
   },
   "devDependencies": {
     "sequelize-cli": "^5.5.1"

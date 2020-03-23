@@ -1,14 +1,13 @@
-const SignUps=require('../models').SignUp;
+const signups=require('../models').signup;
 const jwt = require("jsonwebtoken");
-var  nodemailer = require("nodemailer");
-const SignUp=()=>{
+const signup=()=>{
 
 }
-
-SignUp.create=async(req,res)=>{
+  //  Inserting the signup Values into the signup table 
+signup.create=async(req)=>{
 let response
    try{
-    await SignUps.create({
+    await signups.create({
         Name:req.body.Name,
         Email:req.body.Email,  
         Password:req.body.Password,
@@ -23,11 +22,11 @@ let response
 }
 return response 
 }
-
-SignUp.login=async(req,res)=>{
+// Login - Check the user's username and password available in the signup table
+signup.login=async(req,res)=>{
     var name=req.body.name;
     var password=req.body.password;
-   await SignUps.findAll({
+   await signups.findAll({
        where:{
         Name: name,
         Password:password
@@ -64,114 +63,54 @@ SignUp.login=async(req,res)=>{
         res.send(err);
     });
 }
-let transporter = nodemailer.createTransport({
- 
-    service: "gmail",
-    auth: {
-      user: 'indhunandhini983@gmail.com',
-      pass: 'indhunandhini31599'
-    }
-  });
-  transporter.verify((error, success) => {
-    if (error) {
-      console.log(error);
-    } else {
-      console.log("Server is ready to take messages");
-    }
-  });
-  
-
-SignUp.email=async(req,res)=>{
-    var changemail= req.body.changemail;
-      
-    await SignUps.findAll({
-      where:{
-       Email: changemail,
-       
-       },
-   },)
-   .then(result=>{
-    if (result.length == 0) {
-      console.log("not exits");
-      res.send( "emaildoesnotexist");
-    }
-    else if (result.length > 0) {
-      var mail = {
-        from: "indhunandhini983@gmail.com",
-        to: req.body.changemail,
-        subject: "Password Recovery Email",
-        text:
-    
-          "Please reset your passoword using the below link.  Reset Link:http://localhost:3000/resetpass/" +
-          req.body.changemail +
-          ""
-      };
-      transporter.sendMail(mail, (err, data) => {
-        if (err) {
-          // console.log(err);
-          res.json({msg: "fail", err: err});
-        } else {
-          // console.log(data);
-          res.json({  msg: "success" });
-        }
-      });    
-    }
-    
-   })
-   .catch(err=>{
-       res.send(err);
-   });
-
-
-}
-SignUp.ResetEmail=async(req,res)=>{
-
-    var newpass = req.body.newpass;
-    var Email_id = req.body.Email_id;
-  
-    await SignUps.update({ Password: newpass }, {
-      where: {
-        Email: Email_id
-      }
-    })
-    .then(result=>{
-      res.json("updated")
-    })
-    .catch(err=>{
-     res.send(err);
-    });
-}
-SignUp.UserToAdmin=async(req,res)=>{
-
+ //  changing authority user to admin
+signup.userToAdmin=async(req,res)=>{
   var Name = req.body.Name;
- 
-  await SignUps.update({ isadmin: 1 }, {
+  await signups.update({ isadmin: 1 }, {
     where: {
       Name: Name
     }
   })
-  .then(result=>{
+  .then(
     res.json("updated")
-  })
+  )
   .catch(err=>{
    res.send(err);
   });
 }
-SignUp.AdminToUser=async(req,res)=>{
-
+  // changing authority admin to user
+signup.adminToUser=async(req,res)=>{
   var Name = req.body.Name;
- 
-  await SignUps.update({ isadmin: 0 }, {
+  await signups.update({ isadmin: 0 }, {
     where: {
       Name: Name
     }
   })
-  .then(result=>{
+  .then(
     res.json("updated")
-  })
+  )
   .catch(err=>{
    res.send(err);
   });
+}
+
+//  fetching email details
+signup.signupDetails = async (res,req) =>{
+  let response;
+  try{
+    var a =  await signups.findAll({
+        attributes:[['Name', 'signupName'],['Email', 'mailId']],
+      })
+      response = a
+  }
+  catch(err){
+    response={err}
+  }
+  
+  return response;
+
+
+
 }
    
-module.exports=SignUp;
+module.exports=signup;
