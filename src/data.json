@@ -1,0 +1,68 @@
+{
+    "lanes": [
+      {
+        "id": "PLANNED",
+        "title": "To do",
+        "style": {
+          "width": 280
+        },
+        "cards": [
+          {
+            "id": "Milk",
+            "title": "Buy milk",
+            "label": "15 mins",
+            "description": "2 ltrs of milk "
+          },
+          {
+            "id": "Plan2",
+            "title": "Dispose Garbage",
+            "label": "10 mins",
+            "description": "Sort out recyclable and waste as needed"
+          },
+          {
+            "id": "Plan3",
+            "title": "Write Blog",
+            "label": "30 mins",
+            "description": "Can AI make memes?"
+          },
+          {
+            "id": "Plan4",
+            "title": "Pay Rent",
+            "label": "5 mins",
+            "description": "Transfer to bank account"
+          }
+        ]
+      },
+      {
+        "id": "WIP",
+        "title": "Doing",
+        "style": {
+          "width": 280
+        },
+        "cards": [
+          {
+            "id": "Wip1",
+            "title": "Clean House",
+            "label": "30 mins",
+            "description": " Polish windows and doors."
+          }
+        ]
+      },
+      {
+        "title": "Done",
+        "cards": [
+          {
+            "title": "Practice Meditation",
+            "label": "15 mins",
+            "description": "Use Headspace app"
+          },
+          {
+            "title": "Maintain Daily Journal",
+            "label": "15 mins",
+            "description": "Use Spreadsheet for now"
+          }
+        ]
+      }
+    ]
+  }
+  

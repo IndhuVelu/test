@@ -1,0 +1,8 @@
+.boardContainer{
+     background-image: url("https://trello-backgrounds.s3.amazonaws.com/SharedBackground/588x960/0b6a43c42ad724e5832b72fa88eb0c30/photo-1584810175922-8a5a722f12f1.jpg");
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;
+     /* margin-left: 20px; */
+     /* background-image: url("https://trello-backgrounds.s3.amazonaws.com/SharedBackground/256x192/23826573fbf5d32c5e9aeebe662526ce/photo-1505150643203-7a35720d76c6.jpg"); */
+    }

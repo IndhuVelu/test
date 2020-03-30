@@ -1,0 +1,70 @@
+.body1{
+   /* background-image: url("https://trello-backgrounds.s3.amazonaws.com/SharedBackground/588x960/0b6a43c42ad724e5832b72fa88eb0c30/photo-1584810175922-8a5a722f12f1.jpg"); */
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.board-navbar{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    color: #FFF;
+}
+.fa {
+    font-size: 20px;
+}
+.board-icon-bar{
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+
+}
+.board-icon-bar i{
+    width: 38px;
+    height: 35px;
+    border-radius: 10%;
+    box-sizing: border-box;
+    background-color: hsla(0,0%,100%,.3);
+    margin-top: 3px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    padding-left:1px;
+}
+.board-navbar-logo{
+    width: 60%;
+}
+.board-icon-bar p{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    width: 95px;
+    border-radius: 10%;
+    box-sizing: border-box;
+    background-color: hsla(0,0%,100%,.3); 
+    padding:3px;
+}
+.board-icon-bar span{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    width: 85px;
+    padding:3px;
+}
+.board-icon-bar img{
+    width: 10px;
+    color: transparent;
+    height: 20px;
+    margin-top: 10px;
+    
+}
+.trello-board{
+    margin-top: 50px;
+    background-color: none;
+}

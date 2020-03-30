@@ -1,0 +1,56 @@
+{
+    "lanes": [
+      {
+        "id": "PLANNED",
+        "title": "To do",
+        "style": {
+          "width": 280
+        },
+        "cards": [
+          {
+            "id": "Walking",
+            "title": "Walking",
+            "label": "15 mins",
+            "description": "2km from Home "
+          },
+          {
+            "id": "Plan2",
+            "title": "Meeting",
+            "label": "10 mins",
+            "description": "with Clients"
+          }
+        ]
+      },
+      {
+        "id": "WIP",
+        "title": "Doing",
+        "style": {
+          "width": 280
+        },
+        "cards": [
+          {
+            "id": "Wip1",
+            "title": "Watching Tv",
+            "label": "30 mins",
+            "description": " Relax"
+          }
+        ]
+      },
+      {
+        "title": "Done",
+        "cards": [
+          {
+            "title": "Chatting",
+            "label": "15 mins",
+            "description": "with friends"
+          },
+          {
+            "title": "test",
+            "label": "15 mins",
+            "description": "testing"
+          }
+        ]
+      }
+    ]
+  }
+  

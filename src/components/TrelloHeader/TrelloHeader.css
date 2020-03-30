@@ -1,0 +1,83 @@
+.trello-navbar{
+    width: 100%;
+    height: 40px;
+    /* background-color: #0079BF; */
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+.fa {
+    font-size: 20px;
+}
+.icon-bar2{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+
+}
+.icon-bar2 i{
+    width: 32px;
+    height: 32px;
+    border-radius: 10%;
+    box-sizing: border-box;
+    background-color: hsla(0,0%,100%,.3);
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    padding-left:1px;
+    color: #FFF;
+}
+.navbar-logo2 img{
+    width: 80px;
+    height: 30px;
+    opacity: 0.5;
+}
+.navbar-logo2{
+    width: 100%;
+}
+
+.icon-bar a {
+    text-align: center;
+    color: white;
+  }
+.theme{
+    margin-left: 150px;
+}
+.signup_form div {
+    margin-top: 30px;
+}
+.full1 {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.head1 {
+    width: 100%;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+}
+
+.user1 {
+    font-family: Body,Quicksand,sans-serif;
+    color: #FFF;
+    float: right;
+    font-size: 20px;  
+    width: 100px;
+}
+.logbtn1 {
+    
+    height: 39px;
+    border-radius: 10%;
+    box-sizing: border-box;
+    background-color: hsla(0,0%,100%,.3);
+    font-size: 14px;
+
+}    
+.link1{
+    cursor: pointer;
+}
