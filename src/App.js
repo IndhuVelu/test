@@ -1,18 +1,3 @@
-// import React from 'react';
-// import Board from "react-trello";
-// import './App.css';
-// import data from "../src/data.json";
-
-// function App() {
-//   return (
-//     <div className="App">
-//         <Board data={data} draggable editable canAddLanes editLaneTitle/>
-//     </div>
-//   );
-// }
-
-// export default App;
-
 import React from 'react';
 import './App.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
