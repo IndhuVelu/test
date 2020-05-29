@@ -1,13 +1,14 @@
 import React, {Component} from 'react'
 import pic1 from '../../../Assets/Images/pic1.jpg'
 import pic2 from '../../../Assets/Images/pic2.jpg'
-import pic5 from '../../../Assets/Images/pic5.jpg'
-import pic6 from '../../../Assets/Images/pic6.webp'
-import phone1 from '../../../Assets/Images/hair1.jpg'
-import phone2 from '../../../Assets/Images/hair2.jpg'
-import phone3 from '../../../Assets/Images/hair3.jpg'
-import phone4 from '../../../Assets/Images/hair4.jpg'
-class Hair extends Component {
+import pic5 from '../../../Assets/Images/pic3.jpg'
+import pic6 from '../../../Assets/Images/pic4.jpg'
+import phone1 from '../../../Assets/Images/skin1.jpg'
+import phone2 from '../../../Assets/Images/skin2.jpg'
+import phone3 from '../../../Assets/Images/skin3.jpg'
+import phone4 from '../../../Assets/Images/skin4.jpg'
+import { withRouter } from "react-router-dom";
+class Skin extends Component {
     constructor(props) {
         super(props)
 
@@ -81,4 +82,4 @@ class Hair extends Component {
     }
 }
 
-export default Hair
+export default withRouter(Skin)

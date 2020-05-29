@@ -1,0 +1,77 @@
+.navbar{
+    width: 100%;
+    height: 40px;
+    background-color: #0079BF;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+.fa {
+    font-size: 20px;
+}
+.icon-bar{
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+
+}
+.icon-bar i{
+    width: 32px;
+    height: 32px;
+    border-radius: 10%;
+    box-sizing: border-box;
+    background-color: hsla(0,0%,100%,.3);
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    padding-left:1px;
+    color: #FFF;
+}
+.navbar-logo img{
+    width: 80px;
+    height: 30px;
+    opacity: 0.5;
+}
+.navbar-logo{
+    width: 70%;
+}
+#se{
+    margin-right: 55px;
+}
+
+.icon-bar a {
+    text-align: center;
+    color: white;
+  }
+  .icon-bar1 i{
+    width: 32px;
+    height: 32px;
+    border-radius: 10%;
+    box-sizing: border-box;
+    background-color: hsla(0,0%,100%,.3);
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    padding-left:1px;
+    color: #FFF;
+}
+.theme{
+    margin-left: 150px;
+}
+.signup_form div {
+    margin-top: 30px;
+}
+.icon-bar1{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.icon-bar1 a {
+    text-align: center;
+    color: white;
+  }
+

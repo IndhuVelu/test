@@ -1,21 +1,22 @@
 import React, {Component} from 'react'
+import './Mobile.css'
 import pic1 from '../../../Assets/Images/pic1.jpg'
 import pic2 from '../../../Assets/Images/pic2.jpg'
 import pic5 from '../../../Assets/Images/pic3.jpg'
 import pic6 from '../../../Assets/Images/pic4.jpg'
-import phone1 from '../../../Assets/Images/makeup1.jpg'
-import phone2 from '../../../Assets/Images/makeup2.jpg'
-import phone3 from '../../../Assets/Images/makeup3.jpg'
-import phone4 from '../../../Assets/Images/makeup4.jpg'
+import phone1 from '../../../Assets/Images/phone1.jpg'
+import phone2 from '../../../Assets/Images/phone2.jpg'
+import phone3 from '../../../Assets/Images/phone3.jpg'
+import phone4 from '../../../Assets/Images/phone4.jpg'
 import { withRouter } from "react-router-dom";
-class Makeup extends Component {
+class Mobile extends Component {
     constructor(props) {
         super(props)
 
         this.state = {
-         makeup:[{id:1,image:phone1,name:"Makeup Kit",rate:"$10000"},{id:2,image:phone2,name:"Blusish Kit",rate:"$8000"},
-         {id:3,image:phone3,name:" Special Makeup Brush",rate:"$9000"},
-         {id:4,image:phone4,name:"Makeup Brush",rate:"$10000"}]
+         mobile:[{id:1,image:phone1,name:"Oppo",rate:"$10000"},{id:2,image:phone2,name:"Samsung",rate:"$8000"},
+         {id:3,image:phone3,name:"Lenovo",rate:"$9000"},
+         {id:4,image:phone4,name:"MI",rate:"$10000"}]
         }
     }
     handleBook = (e) => {
@@ -58,10 +59,10 @@ class Makeup extends Component {
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
-                <div className="board-heading"><i className="fa fa-user">&nbsp; Featured Makeup Brands</i> <br/></div>
+                <div className="board-heading"><i className="fa fa-user">&nbsp; Featured Mobile Brands</i> <br/></div>
                 <div className="board-card">
                 {
-                    this.state.makeup.map(element => (
+                    this.state.mobile.map(element => (
                         <div class="card" style={{width:"267px",height:"420px"}}>
                         <img className="mobile-img" src={element.image} alt="Denim Jeans" />
                         <h5 className="card-title">{element.name} </h5>
@@ -82,4 +83,5 @@ class Makeup extends Component {
     }
 }
 
-export default  withRouter( Makeup)
+export default withRouter( Mobile)
+

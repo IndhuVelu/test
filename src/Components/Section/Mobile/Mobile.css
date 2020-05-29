@@ -1,0 +1,53 @@
+.mobile{
+    width: 100%;
+    height: 950px;
+}
+.board-card{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cart{
+    margin-top: 30px;
+}
+.board-heading i{
+    display: flex;
+    padding-top: 60px;
+    font-size: 18px;
+    font-weight: 900;
+    padding-bottom: 30px;
+    padding-left: 20px;
+}
+.checked{
+    color: orange;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 20px;
+  }
+  .mobile-img{
+      width: 19rem !important;
+      height: 29rem !important;
+  }
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color:#fc2779;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  .card img{
+      width: 23rem;
+      height: 26rem;
+  }

@@ -3,19 +3,19 @@ import pic1 from '../../../Assets/Images/pic1.jpg'
 import pic2 from '../../../Assets/Images/pic2.jpg'
 import pic5 from '../../../Assets/Images/pic3.jpg'
 import pic6 from '../../../Assets/Images/pic4.jpg'
-import phone1 from '../../../Assets/Images/makeup1.jpg'
-import phone2 from '../../../Assets/Images/makeup2.jpg'
-import phone3 from '../../../Assets/Images/makeup3.jpg'
-import phone4 from '../../../Assets/Images/makeup4.jpg'
+import phone1 from '../../../Assets/Images/image1.jpg'
+import phone2 from '../../../Assets/Images/image2.jpg'
+import phone3 from '../../../Assets/Images/image3.jpg'
+import phone4 from '../../../Assets/Images/image4.jpg'
 import { withRouter } from "react-router-dom";
-class Makeup extends Component {
+class Furniture extends Component {
     constructor(props) {
         super(props)
 
         this.state = {
-         makeup:[{id:1,image:phone1,name:"Makeup Kit",rate:"$10000"},{id:2,image:phone2,name:"Blusish Kit",rate:"$8000"},
-         {id:3,image:phone3,name:" Special Makeup Brush",rate:"$9000"},
-         {id:4,image:phone4,name:"Makeup Brush",rate:"$10000"}]
+         makeup:[{id:1,image:phone1,name:"Room Design",rate:"$10000"},{id:2,image:phone2,name:"Wall Design",rate:"$8000"},
+         {id:3,image:phone3,name:"Bag",rate:"$9000"},
+         {id:4,image:phone4,name:"Table",rate:"$10000"}]
         }
     }
     handleBook = (e) => {
@@ -58,7 +58,7 @@ class Makeup extends Component {
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
-                <div className="board-heading"><i className="fa fa-user">&nbsp; Featured Makeup Brands</i> <br/></div>
+                <div className="board-heading"><i className="fa fa-user">&nbsp; Featured Furniture Brands</i> <br/></div>
                 <div className="board-card">
                 {
                     this.state.makeup.map(element => (
@@ -82,4 +82,5 @@ class Makeup extends Component {
     }
 }
 
-export default  withRouter( Makeup)
+export default  withRouter(Furniture)
+

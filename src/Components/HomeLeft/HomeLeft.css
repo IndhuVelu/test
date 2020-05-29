@@ -1,0 +1,51 @@
+.tab a {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+}
+.tab {
+    padding: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.tab :hover {
+    background-color: #e4f0f6;
+    color: #0079BF;
+}
+
+.board{
+    width: 70%;
+    height: 830px;
+}
+.board-text{
+    display: flex;
+    padding-top: 60px;
+    font-size: 16px;
+    font-weight: 900;
+}
+.tab i {
+    color: #000;
+    background-color: inherit;
+    padding: 15px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+  
+}
+.tab i:hover {
+    background-color: #e4f0f6;
+    color: #0079BF;
+    text-decoration: none;
+}
+.board i{
+    display: flex;
+    padding-top: 60px;
+    font-size: 18px;
+    font-weight: 900;
+}
