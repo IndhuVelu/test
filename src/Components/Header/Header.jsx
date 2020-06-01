@@ -28,7 +28,7 @@ class Header extends Component {
                        <div> <img src={logo} alt="logo"/> </div> 
                     </div>
                     <div  className="icon-bar1">
-                        <i className="fa fa-shopping-cart""  onClick={ e => this.handleCart(e) } ></i>
+                        <i className="fa fa-shopping-cart"  onClick={ e => this.handleCart(e) } ></i>
                         <a href="/trello"><i className="fa fa-info-circle"></i></a> 
                         <a href="/trello"><i className="fa  fa-bell"></i></a> 
                         <a href="/trello"><i className="fa  fa-user" onClick={ e => this.handleUser(e) }></i></a> 
