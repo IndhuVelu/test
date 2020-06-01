@@ -69,6 +69,7 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-around;
+    cursor:pointer;
 }
 .icon-bar1 a {
     text-align: center;
