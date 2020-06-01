@@ -2,8 +2,18 @@ import React, { Component } from 'react'
 import '../Header/Header.css'
 
 import logo from "../../Assets/Images/logo.jpeg"
+import { withRouter } from "react-router-dom"; 
 class Header extends Component {
-    
+     constructor(props) {
+        super(props)
+
+        this.state = {
+        
+        }
+    }
+    handleCart = (e) => {
+        this.props.history.push('/cart', {id: this.props.id})
+    }
     render() {
         return (
             <div>
@@ -29,4 +39,4 @@ class Header extends Component {
     }
 }
 
-export default Header
+export default withRouter(Header)
